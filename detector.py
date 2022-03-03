@@ -11,9 +11,6 @@ import utils
 from torchvision import models
 from torchvision import transforms
 
-
-
-
 class Detector(nn.Module):
     """Baseline module for object detection."""
 
@@ -95,7 +92,6 @@ class Detector(nn.Module):
                     - width / 2.0
                 )
                 category = o[5, bb_index[0], bb_index[1]]
-                
                 
                 img_bbs.append(
                     {
